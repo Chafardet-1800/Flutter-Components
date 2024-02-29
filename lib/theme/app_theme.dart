@@ -7,7 +7,19 @@ class AppTheme {
   static final ThemeData ligthTheme = ThemeData.light().copyWith(
        
     // Color primario
-    primaryColor: Colors.purple,
+    primaryColor: primary,
+
+    // Appbar theme
+    appBarTheme: const AppBarTheme(
+      color: primary
+    ),
+
+  );
+
+  static final ThemeData darkTheme = ThemeData.dark().copyWith(
+       
+    // Color primario
+    primaryColor: primary,
 
     // Appbar theme
     appBarTheme: const AppBarTheme(

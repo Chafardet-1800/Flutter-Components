@@ -37,7 +37,7 @@ class AppRoutes {
 
   static Route<dynamic> onGeneralRoute (RouteSettings settings) {
     return MaterialPageRoute(
-      builder: (context) => const AlertScreen(),
+      builder: (context) => const HomeScreen(),
     );
   }
 
