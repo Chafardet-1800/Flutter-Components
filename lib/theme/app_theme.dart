@@ -12,7 +12,13 @@ class AppTheme {
     // Appbar theme
     appBarTheme: const AppBarTheme(
       color: primary
-    ),
+    ), 
+
+    textButtonTheme: TextButtonThemeData(
+      style:  TextButton.styleFrom(
+        foregroundColor: primary
+      )
+    )
 
   );
 
@@ -25,6 +31,12 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       color: primary
     ),
+    
+    textButtonTheme: TextButtonThemeData(
+      style:  TextButton.styleFrom(
+        foregroundColor: primary
+      )
+    )
 
   );
 }
