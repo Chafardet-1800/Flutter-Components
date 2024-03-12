@@ -18,7 +18,19 @@ class AppTheme {
       style:  TextButton.styleFrom(
         foregroundColor: primary
       )
-    )
+    ),
+
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: primary,
+      shape: CircleBorder()
+    ),
+
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: primary,
+        shape: const StadiumBorder()
+      )
+    ),
 
   );
 
@@ -36,7 +48,19 @@ class AppTheme {
       style:  TextButton.styleFrom(
         foregroundColor: primary
       )
-    )
+    ),
+
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: primary,
+      shape: CircleBorder()
+    ),
+
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: primary,
+        shape: const StadiumBorder()
+      )
+    ),
 
   );
 }
