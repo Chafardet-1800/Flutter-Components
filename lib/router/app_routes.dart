@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components_test/models/models.dart';
 
+import 'package:flutter_components_test/models/models.dart';
 import 'package:flutter_components_test/screens/screens.dart';
 
 class AppRoutes {
@@ -12,6 +12,7 @@ class AppRoutes {
     MenuOption(route: '/listView', name: 'List View', screen: const ListviewScreen(), icon: Icons.list),
     MenuOption(route: '/alert', name: 'Alerts Screen', screen: const AlertScreen(), icon: Icons.mark_unread_chat_alt_outlined),
     MenuOption(route: '/cards', name: 'Cards Screen', screen: const CardScreen(), icon: Icons.credit_card),
+    MenuOption(route: '/avatar', name: 'Avatar Screen', screen: const AvatarScreen(), icon: Icons.person),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

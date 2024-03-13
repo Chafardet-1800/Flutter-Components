@@ -11,7 +11,9 @@ class AppTheme {
 
     // Appbar theme
     appBarTheme: const AppBarTheme(
-      color: primary
+      color: primary,
+      foregroundColor: Colors.white,
+      centerTitle: true,
     ), 
 
     textButtonTheme: TextButtonThemeData(
