@@ -24,6 +24,7 @@ class AppTheme {
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: primary,
+      foregroundColor: Colors.white,
       shape: CircleBorder()
     ),
 
