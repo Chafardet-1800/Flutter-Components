@@ -11,6 +11,16 @@ class ListviewBaseScreen extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         title: const Text('List'),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only( right: 5),
+            child: CircleAvatar(
+              backgroundColor: Colors.purple[900],
+              foregroundColor: Colors.white,
+              child: const Text('AC'),
+            ),
+          )
+        ], 
       ),
       body: ListView(
         children: [

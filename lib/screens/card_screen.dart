@@ -22,48 +22,17 @@ class CardScreen extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         title: const Text('Tarjetas'),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only( right: 5),
+            child: CircleAvatar(
+              backgroundColor: Colors.purple[900],
+              foregroundColor: Colors.white,
+              child: const Text('AC'),
+            ),
+          )
+        ], 
       ),
-      // body: ListView(
-      //   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
-      //   children: const [
-
-      //     CustomCard(
-      //       icon: Icons.add_box_sharp,
-      //       title: 'Primera opcion',
-      //     ),
-
-      //     CustomCard(
-      //       icon: Icons.add_box_sharp,
-      //       title: 'Segunda opcion',
-      //       subtitle: 'Esta es la buena',
-      //     ),
-
-      //     CustomCardType2(
-      //       imageUrl: 'https://estaticos-cdn.prensaiberica.es/clip/4e1211c1-1520-41a7-aabb-42c2e03d1731_alta-libre-aspect-ratio_default_0.jpg',
-      //     ),
-      //     SizedBox(height: 20,),
-      //     CustomCardType2(
-      //       imageName: 'Un gato amargado',
-      //       imageUrl: 'https://fotografias.lasexta.com/clipping/cmsimages02/2019/01/25/DB41B993-B4C4-4E95-8B01-C445B8544E8E/69.jpg?crop=4156,2338,x0,y219&width=1280&height=720&optimize=low&format=jpg',
-      //     ),
-      //     SizedBox(height: 20,),
-      //     CustomCardType2(
-      //       imageName: 'Un gato jugeton',
-      //       imageUrl: 'https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_1468962.jpg?w=1600&h=900',
-      //     ),
-      //     SizedBox(height: 20,),
-      //     CustomCardType2(
-      //       imageName: 'Un gato amargado',
-      //       imageUrl: 'https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067',
-      //     ),
-      //     SizedBox(height: 20,),
-      //     CustomCardType2(
-      //       imageName: 'Un gato deprimido',
-      //       imageUrl: 'https://s1.eestatic.com/2021/08/19/curiosidades/mascotas/605450368_200857803_1706x960.jpg',
-      //     ),
-      //     SizedBox(height: 200,),
-      //   ],
-      // ),
       body: ListView.separated(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
         itemBuilder: (BuildContext context, int index) {

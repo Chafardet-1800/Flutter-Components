@@ -13,6 +13,16 @@ class ListviewScreen extends StatelessWidget {
         title: const Center(
           child: Text('List'),
         ),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only( right: 5),
+            child: CircleAvatar(
+              backgroundColor: Colors.purple[900],
+              foregroundColor: Colors.white,
+              child: const Text('AC'),
+            ),
+          )
+        ], 
       ),
       body: ListView.separated(
         itemCount: optionList.length,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_components_test/theme/app_theme.dart';
 
 class AvatarScreen extends StatelessWidget {
    
@@ -8,7 +9,17 @@ class AvatarScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: const Text('Avatar Screen'),
+        title: const Text('Avatars'),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only( right: 5),
+            child: CircleAvatar(
+              backgroundColor: Colors.purple[900],
+              foregroundColor: Colors.white,
+              child: const Text('AC'),
+            ),
+          )
+        ],
       ),
       body: const Center(
          child: Text('AvatarScreen'),

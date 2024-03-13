@@ -14,7 +14,17 @@ class HomeScreen extends StatelessWidget {
       appBar:  AppBar(
         title: const Center(
           child: Text('Componentes de flutter'),
-        )        
+        ),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only( right: 5),
+            child: CircleAvatar(
+              backgroundColor: Colors.purple[900],
+              foregroundColor: Colors.white,
+              child: const Text('AC'),
+            ),
+          )
+        ],     
       ),
 
       body: ListView.separated(
