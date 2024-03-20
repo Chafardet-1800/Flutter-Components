@@ -14,32 +14,22 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
 
   double _width = 70;
   double _heigth = 70;
-  MaterialColor _color = Colors.purple;
+  Color _color = Colors.purple;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(10);
-  bool _changed = false;
 
   void changeShape () {
 
-    if(_changed) {
-
-      _borderRadius = BorderRadius.circular(10);
-      _width = 70;
-      _heigth = 70;
-      _color = Colors.purple;
-      _changed = false;
-
-    }
-    else {
-
       final rnd = Random().nextInt(300).toDouble() + 70;
 
-      _borderRadius = BorderRadius.circular(50);
+      _borderRadius = BorderRadius.circular(Random().nextInt(100).toDouble());
       _width = rnd;
       _heigth = rnd;
-      _color = Colors.blue;
-      _changed = true;
-
-    }
+      _color = Color.fromRGBO(
+        Random().nextInt(250), 
+        Random().nextInt(250), 
+        Random().nextInt(250), 
+        1
+      );
 
     setState(() {});
 
@@ -62,13 +52,15 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
         ], 
       ),
       body: Center(
-         child: Container(
+         child: AnimatedContainer(
           width: _width,
           height: _heigth,
           decoration: BoxDecoration(
             color: _color,
             borderRadius: _borderRadius
-          ),
+          ), 
+          duration: const Duration(milliseconds: 400),
+          curve: Curves.easeInOutBack,
          ),
       ),
       floatingActionButton: FloatingActionButton(
