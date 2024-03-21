@@ -9,7 +9,7 @@ class AppRoutes {
 
   static final menuOptions = <MenuOption>[
     // MenuOption(route: '/home', name: 'Home Screen', screen: const HomeScreen(), icon: Icons.home_filled),
-    MenuOption(route: '/listView', name: 'List View', screen: const ListviewScreen(), icon: Icons.list),
+    MenuOption(route: '/listView', name: 'InfiniteScrol & Pull to refresh', screen: const ListviewBuilderScreen(), icon: Icons.list),
     MenuOption(route: '/alert', name: 'Alerts Screen', screen: const AlertScreen(), icon: Icons.mark_unread_chat_alt_outlined),
     MenuOption(route: '/cards', name: 'Cards Screen', screen: const CardScreen(), icon: Icons.credit_card),
     MenuOption(route: '/avatar', name: 'Avatar Screen', screen: const AvatarScreen(), icon: Icons.person),
